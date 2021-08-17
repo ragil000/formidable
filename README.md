@@ -105,7 +105,7 @@ Parse an incoming file upload, with the
 
 ```js
 import http from 'http';
-import formidable from 'formidable';
+import formidable from '@grossacasacs/formidable';
 
 const server = http.createServer((req, res) => {
   if (req.url === '/api/upload' && req.method.toLowerCase() === 'post') {
@@ -153,7 +153,7 @@ Or try the
 
 ```js
 import express from 'express';
-import formidable from 'formidable';
+import formidable from '@grossacasacs/formidable';
 
 const app = express();
 
@@ -199,7 +199,7 @@ object - there is a difference._
 
 ```js
 import Koa from 'Koa';
-import formidable from 'formidable';
+import formidable from '@grossacasacs/formidable';
 
 const app = new Koa();
 
@@ -298,7 +298,7 @@ _Please pass [`options`](#options) to the function/constructor, not by assigning
 them to the instance `form`_
 
 ```js
-import formidable from 'formidable';
+import formidable from '@grossacasacs/formidable';
 const form = formidable(options);
 ```
 

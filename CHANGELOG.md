@@ -19,7 +19,7 @@
  * options.enabledPlugins must contain the plugin themselves instead of the plugins names 
 
 
-### Unreleased (`canary` & `dev` dist-tags)
+### 2.0
 
  * feat: add options.filter ([#716](https://github.com/node-formidable/formidable/pull/716))
  * feat: add code and httpCode to most errors ([#686](https://github.com/node-formidable/formidable/pull/686))
