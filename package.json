@@ -16,7 +16,7 @@
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "canary"
+    "tag": "latest"
   },
   "scripts": {
     "bench": "node benchmark",
