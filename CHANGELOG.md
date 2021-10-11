@@ -1,14 +1,14 @@
 # Changelog
 
-### Unreleased 3.1.1
+### 3.1.1
 
  * feat: handle top level json array, string and number
 
-### Unreleased 3.1
+### 3.1
 
  * feat: add firstValues, readBooleans helpers
 
-### Unreleased 3.0
+### 3.0
 
  * feat: remove options.multiples ([730](https://github.com/node-formidable/formidable/pull/730))
  * use modern URLSearchParams https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams internally

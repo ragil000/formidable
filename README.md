@@ -54,12 +54,7 @@ are always welcome! :heart: Jump on
 closed, but if you are interested we can discuss it and add you after strict
 rules, like enabling Two-Factor Auth in your npm and GitHub accounts.
 
-_**Note:** The github `master` branch is a "canary" branch - try it with
-`npm i formidable@canary`. Do not expect (for now) things from it to be inside
-the`latest` "dist-tag" in the Npm. The`formidable@latest`is the`v1.2.1` version
-and probably it will be the last`v1` release!_
 
-_**Note: v2 is coming soon!**_
 
 ## Highlights
 
@@ -73,22 +68,12 @@ _**Note: v2 is coming soon!**_
 
 ## Install
 
-This project requires `Node.js >= 10.13`. Install it using
+This project requires `Node.js >= 14`. Install it using
 [yarn](https://yarnpkg.com) or [npm](https://npmjs.com).<br /> _We highly
 recommend to use Yarn when you think to contribute to this project._
 
 ```sh
-npm install formidable
-# or the canary version
-npm install formidable@canary
-```
-
-or with Yarn v1/v2
-
-```sh
-yarn add formidable
-# or the canary version
-yarn add formidable@canary
+npm install @grossacasacs/formidable
 ```
 
 This is a low-level package, and if you're using a high-level framework it _may_
@@ -532,7 +517,7 @@ which is used in [src/plugins/multipart.js](./src/plugins/multipart.js)), then
 you can remove it from the `options.enabledPlugins`, like so
 
 ```js
-import formidable, {octetstream, querystring, json} from "formidable";
+import formidable, {octetstream, querystring, json} from "@grossacasacs/formidable";
 const form = formidable({
   hashAlgorithm: 'sha1',
   enabledPlugins: [octetstream, querystring, json],
@@ -704,7 +689,7 @@ form.on('end', () => {});
 Gets first values of fields, like pre 3.0.0 without multiples pass in a list of optional exceptions where arrays of strings is still wanted (`<select multiple>` for example)
 
 ```js
-import { firstValues } from 'formidable/src/helpers/firstValues.js';
+import { firstValues } from '@grossacasacs/formidable/src/helpers/firstValues.js';
 
 // ...
 form.parse(request, async (error, fieldsMultiple, files) => {
@@ -722,8 +707,8 @@ Html form input type="checkbox" only send the value "on" if checked,
 convert it to booleans for each input that is expected to be sent as a checkbox, only use after firstValues or similar was called.
 
 ```js
-import { firstValues } from 'formidable/src/helpers/firstValues.js';
-import { readBooleans } from 'formidable/src/helpers/readBooleans.js';
+import { firstValues } from '@grosacasacs/formidable/src/helpers/firstValues.js';
+import { readBooleans } from '@grossacasacs/formidable/src/helpers/readBooleans.js';
 
 // ...
 form.parse(request, async (error, fieldsMultiple, files) => {
